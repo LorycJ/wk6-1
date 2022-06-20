@@ -1,0 +1,156 @@
+<!--Html file for CSC102
+Assignment: Launching your UAT Space Program HTML Document Tags
+written by Loryc Jess
+email: LORJESS@uat.edu-->
+<!DOCTYPE html>
+<!--html tag for assignment-->
+<html>
+<!--head tag for assignment-->
+
+<head>
+    <!--The title goes at the title bar -->
+    </title>
+    Prof. Prater's UAT Space Page
+    </tital>
+
+    <script src="code.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <!--<style>
+        body {
+            background-color: maroon;
+            color: white
+        }
+    </style>-->
+</head>
+<!--body tag as required by assignment-->
+
+<body>
+    <table>
+        <td>
+            <!--logo for UATSpace-->
+            <img src="UATSpaceLogo-1.jpg">
+        </td>
+        <td>
+            <!--fulfills header requirement-->
+            <h1>Welcome to UATSpace</h1>
+        </td>
+    </table>
+<br>
+<br>
+<table id="Data" border="2"width="70%">
+    <col style="width: 35%">
+    <col style="width: 35%">
+    <thead>
+        <th><div id="headerStyle">Data Type</div></th>
+        <th><div id="headerStyle">Reading</div></th>
+    </thead>
+    <tbody>
+        <tr id="seconds">
+            <td>Time Elapsed</td>
+            <td>15 seconds</td>
+        </tr>
+        <tr id="latitude">
+            <td>Latitude</td>
+            <td>0</td>
+        </tr>
+        <tr id="longitude">
+            <td>longitude</td>
+            <td>0</td>
+        </tr>
+        <tr id="gpsAltitude">
+            <td><element style="color: red">GPS Altitude</td></element>
+            <td>0</td>
+        </tr>
+        <tr id="bmpAltitude">
+            <td>BMP Altitude</td>
+            <td>30383.04</td>
+        </tr>
+        <tr id="bmpPress">
+            <td>BMP Pressure</td>
+            <td>2.34</td>
+        </tr>
+        <tr id="bmpTemp">
+            <td>BMP Temperature</td>
+            <td>0</td>
+        </tr>
+        <tr id="digTemp">
+            <td>Digital Temperature</td>
+            <td>24.12</td>
+        </tr>
+        <tr id="cssTemp">
+            <td>CSS Temperature</td>
+            <td></td>
+        </tr>
+        <tr id="cssCO2">
+            <td>CSS eCO2</td>
+            <td>400</td>
+        </tr>
+        <tr id="cssTVOC">
+            <td>CSS TVOC</td>
+            <td>0</td>
+        </tr>
+        <tr id="UV">
+            <td>UV</td>
+            <td>0</td>
+        </tr>
+        <tr id="accelX">
+            <td>Acceleration X</td>
+            <td>-0.87</td>
+        </tr>
+        <tr id="accelY">
+            <td>Acceleration Y</td>
+            <td>-0.02</td>
+        </tr>
+        <tr id="accelZ">
+            <td>Acceleration Z</td>
+            <td>9.61</td>
+        </tr>
+        <tr id="magneticX">
+            <td>Magnetic X</td>
+            <td>0.13</td>
+        </tr>
+        <tr id="magneticY">
+            <td>Magnetic Y</td>
+            <td>0.57</td>
+        </tr>
+        <tr id="magneticZ">
+            <td>Magnetic Z</td>
+            <td>-0.24</td>
+        </tr>
+        <tr id="gyroX">
+            <td>Gyro X</td>
+            <td>4.66
+            </td>
+        </tr>
+        <tr id="gyroY">
+            <td>Gyro Y</td>
+            <td>0.01</td>
+        </tr>
+        <tr id="gyroZ">
+            <td>Gyro Z</td>
+            <td>-0.4</td>
+        </tr>
+    </tbody>
+</table>
+
+    
+    <h1 id="blink"> Rocket Launch Timer</h1>
+    <script> type = "text/javasc"
+        var blink = document.getElementById('blink');
+        setInterval(function () {
+            blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+        }, 1500);
+    </script>
+    
+    <br>
+    <br>
+    <!--Button requirement from assignment-->
+    <button id="startButton" onclick="start();">Start</button>
+    <button id="stopButton" onclick="stop();">Stop</button>
+    <br>
+    <br>
+    Time left before launch:<br>
+    <div id="countdownDisplay">Launch not initiated:</div>
+</body>
+
+</html>
